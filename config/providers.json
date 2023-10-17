@@ -1,0 +1,20 @@
+{
+  "note": "Reference prices, not real vendor pricing",
+  "providers": [
+    {
+      "context": 128,
+      "name": "economy",
+      "price_units": 1
+    },
+    {
+      "context": 1024,
+      "name": "balanced",
+      "price_units": 3
+    },
+    {
+      "context": 8192,
+      "name": "large",
+      "price_units": 8
+    }
+  ]
+}
