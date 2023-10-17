@@ -1,0 +1,27 @@
+{
+  "checks": {
+    "accepted": {
+      "equals": 0
+    },
+    "accounted": {
+      "equals": true
+    },
+    "blocked": {
+      "equals": 1
+    },
+    "cost_units": {
+      "equals": 0
+    },
+    "limited": {
+      "equals": 0
+    },
+    "requests": {
+      "equals": 1
+    },
+    "unavailable": {
+      "equals": 0
+    }
+  },
+  "rationale": "The blocked request incurs zero provider cost.",
+  "synthetic": true
+}
