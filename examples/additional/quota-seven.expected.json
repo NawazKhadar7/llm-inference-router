@@ -1,0 +1,27 @@
+{
+  "checks": {
+    "accepted": {
+      "equals": 3
+    },
+    "accounted": {
+      "equals": true
+    },
+    "blocked": {
+      "equals": 0
+    },
+    "cost_units": {
+      "min": 1
+    },
+    "limited": {
+      "equals": 4
+    },
+    "requests": {
+      "equals": 7
+    },
+    "unavailable": {
+      "equals": 0
+    }
+  },
+  "rationale": "The quota admits three prompts and limits four.",
+  "synthetic": true
+}
