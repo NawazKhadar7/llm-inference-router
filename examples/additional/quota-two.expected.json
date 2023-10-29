@@ -1,0 +1,27 @@
+{
+  "checks": {
+    "accepted": {
+      "equals": 1
+    },
+    "accounted": {
+      "equals": true
+    },
+    "blocked": {
+      "equals": 0
+    },
+    "cost_units": {
+      "min": 1
+    },
+    "limited": {
+      "equals": 1
+    },
+    "requests": {
+      "equals": 2
+    },
+    "unavailable": {
+      "equals": 0
+    }
+  },
+  "rationale": "Exactly one prompt is accepted and one is limited.",
+  "synthetic": true
+}
