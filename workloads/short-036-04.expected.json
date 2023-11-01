@@ -1,0 +1,24 @@
+{
+  "checks": {
+    "accepted": {
+      "equals": 36
+    },
+    "accounted": {
+      "equals": true
+    },
+    "blocked": {
+      "equals": 0
+    },
+    "limited": {
+      "equals": 0
+    },
+    "requests": {
+      "equals": 36
+    },
+    "unavailable": {
+      "equals": 0
+    }
+  },
+  "rationale": "Route short prompts to the cheapest fitting provider.",
+  "synthetic": true
+}
