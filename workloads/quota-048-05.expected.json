@@ -1,0 +1,24 @@
+{
+  "checks": {
+    "accepted": {
+      "equals": 24
+    },
+    "accounted": {
+      "equals": true
+    },
+    "blocked": {
+      "equals": 0
+    },
+    "limited": {
+      "equals": 24
+    },
+    "requests": {
+      "equals": 48
+    },
+    "unavailable": {
+      "equals": 0
+    }
+  },
+  "rationale": "Admit only the configured tenant request quota.",
+  "synthetic": true
+}
