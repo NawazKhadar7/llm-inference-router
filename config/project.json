@@ -1,0 +1,47 @@
+{
+  "algorithm": "Sort providers by price, skip insufficient context windows, then retry connection failures. Guardrails precede quotas and provider calls. Single-flight keyed locks serialize duplicate prompts. Selection is O(P log P).",
+  "architecture": "HTTP workload API \u2192 synchronous run harness \u2192 asyncio gateway \u2192 guardrail/quota \u2192 tenant-scoped cache \u2192 provider abstraction.",
+  "data_model": "Inputs are prompt strings and tenant IDs. Outputs carry status, selected provider, estimated tokens and synthetic cost units. Workload metrics reconcile every request.",
+  "description": "An asynchronous local routing gateway with context-aware provider selection, single-flight caching and admission quotas.",
+  "design": "Mocks make cost and failure decisions reproducible. Prices are arbitrary units, not actual vendor fees. A provider failure is distinct from a policy block. Lock lifetime is bounded by the short-lived experiment, not a persistent gateway.",
+  "families": [
+    "short",
+    "long",
+    "mixed",
+    "blocked",
+    "quota",
+    "fallback"
+  ],
+  "family_notes": [
+    "Route short prompts to the cheapest fitting provider.",
+    "Long prompts exceed the economy context and need a larger provider.",
+    "Mix context lengths while preserving request accounting.",
+    "Block explicit instruction-override patterns before provider execution.",
+    "Admit only the configured tenant request quota.",
+    "Fall back when the economy provider is unavailable."
+  ],
+  "file_count": 165,
+  "limitations": "Providers are deterministic mocks; no external LLM, Redis or ONNX model is bundled. Pattern matching is a demonstration and cannot reliably detect jailbreaks. Character-based token estimates differ from real tokenizers. Distributed shared quotas, streaming completions, cache size in bytes and credential management remain extension work.",
+  "numpy": false,
+  "operations": "Run the loopback dashboard locally. In a production adapter use TLS, real tokenizer limits, deadline propagation, a shared quota backend and audited safety policies.",
+  "scope": "Asyncio provider abstraction, approximate token budgeting, cheapest eligible routing, tenant quotas, in-memory TTL/LRU cache, synthetic provider fallback and a local workload HTTP API.",
+  "security": "Treat this as educational code; review it before handling trusted data.",
+  "sizes": [
+    6,
+    12,
+    24,
+    36,
+    48,
+    60
+  ],
+  "slug": "llm-inference-router",
+  "title": "Distributed LLM Inference Router & Guardrail Engine",
+  "topics": [
+    "llm",
+    "asyncio",
+    "routing",
+    "ai-safety",
+    "systems"
+  ],
+  "workload_count": 36
+}
