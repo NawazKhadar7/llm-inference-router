@@ -1,0 +1,7 @@
+services:
+  demo:
+    build: .
+    network_mode: host
+    read_only: true
+    environment:
+      PYTHONDONTWRITEBYTECODE: "1"
