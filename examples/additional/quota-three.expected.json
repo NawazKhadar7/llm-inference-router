@@ -1,0 +1,27 @@
+{
+  "checks": {
+    "accepted": {
+      "equals": 1
+    },
+    "accounted": {
+      "equals": true
+    },
+    "blocked": {
+      "equals": 0
+    },
+    "cost_units": {
+      "min": 1
+    },
+    "limited": {
+      "equals": 2
+    },
+    "requests": {
+      "equals": 3
+    },
+    "unavailable": {
+      "equals": 0
+    }
+  },
+  "rationale": "Floor division admits one prompt and limits two.",
+  "synthetic": true
+}
