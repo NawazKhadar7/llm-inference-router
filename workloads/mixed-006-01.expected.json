@@ -1,0 +1,24 @@
+{
+  "checks": {
+    "accepted": {
+      "equals": 6
+    },
+    "accounted": {
+      "equals": true
+    },
+    "blocked": {
+      "equals": 0
+    },
+    "limited": {
+      "equals": 0
+    },
+    "requests": {
+      "equals": 6
+    },
+    "unavailable": {
+      "equals": 0
+    }
+  },
+  "rationale": "Mix context lengths while preserving request accounting.",
+  "synthetic": true
+}
