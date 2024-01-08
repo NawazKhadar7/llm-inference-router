@@ -1,0 +1,55 @@
+{
+  "metrics": {
+    "accepted": 6,
+    "accounted": true,
+    "blocked": 0,
+    "cost_units": 36,
+    "limited": 0,
+    "requests": 6,
+    "unavailable": 0
+  },
+  "output": [
+    {
+      "cost_units": 6,
+      "provider": "economy",
+      "status": "ok",
+      "text": "economy: Explain queue number 0",
+      "tokens_estimated": 6
+    },
+    {
+      "cost_units": 6,
+      "provider": "economy",
+      "status": "ok",
+      "text": "economy: Explain queue number 1",
+      "tokens_estimated": 6
+    },
+    {
+      "cost_units": 6,
+      "provider": "economy",
+      "status": "ok",
+      "text": "economy: Explain queue number 2",
+      "tokens_estimated": 6
+    },
+    {
+      "cost_units": 6,
+      "provider": "economy",
+      "status": "ok",
+      "text": "economy: Explain queue number 3",
+      "tokens_estimated": 6
+    },
+    {
+      "cost_units": 6,
+      "provider": "economy",
+      "status": "ok",
+      "text": "economy: Explain queue number 4",
+      "tokens_estimated": 6
+    },
+    {
+      "cost_units": 6,
+      "provider": "economy",
+      "status": "ok",
+      "text": "economy: Explain queue number 5",
+      "tokens_estimated": 6
+    }
+  ]
+}
